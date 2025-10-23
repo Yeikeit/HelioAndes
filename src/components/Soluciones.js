@@ -1,4 +1,3 @@
-import { Card } from "react-bootstrap";
 
 function Soluciones() {
     return (
