@@ -17,7 +17,7 @@ function App() {
       <Hero />
       <Servicios />
       <Soluciones />
-      <CalculadoraIntegral />
+      <CalculadoraIntegral/>
       <Planes />
       <Testimonios />
       <FAQ />
