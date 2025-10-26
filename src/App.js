@@ -12,6 +12,7 @@ import Testimonios from './components/Testimonios';
 import opcionesSelects from './db-mock/opciones.js';
 
 function App() {
+  const anioActual = new Date().getFullYear();
   return (
     <div className="App">
       <NavbarHelio />
@@ -23,7 +24,7 @@ function App() {
       <Testimonios />
       <FAQ />
       <Contacto />
-      <Footer />
+      <Footer anio={anioActual}/>
     </div>
   );
 }
