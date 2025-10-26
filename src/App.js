@@ -9,6 +9,7 @@ import Planes from './components/Planes';
 import Servicios from './components/Servicios';
 import Soluciones from './components/Soluciones';
 import Testimonios from './components/Testimonios';
+import opcionesSelects from './db-mock/opciones.js';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <Hero />
       <Servicios />
       <Soluciones />
-      <CalculadoraIntegral />
+      <CalculadoraIntegral opcionesSelects={opcionesSelects}/>
       <Planes />
       <Testimonios />
       <FAQ />
