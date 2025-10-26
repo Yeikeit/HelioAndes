@@ -18,7 +18,7 @@ function NavbarHelio() {
             <Nav.Link href="#home">Inicio</Nav.Link>
             <Nav.Link href="#servicios">Servicios</Nav.Link>
             <Nav.Link href="#soluciones">Soluciones</Nav.Link>
-            <Nav.Link href="#demo-calculadora">DEMO</Nav.Link>
+            <Nav.Link href="#calculadora-integral">DEMO</Nav.Link>
             <Nav.Link href="#planes">Planes</Nav.Link>
             <Nav.Link href="#testimonios">Testimonios</Nav.Link>
             <Nav.Link href="#faq">FAQ</Nav.Link>
