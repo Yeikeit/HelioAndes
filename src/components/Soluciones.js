@@ -1,6 +1,8 @@
+
 function Soluciones() {
     return (
         <div></div>
+
     );
 }
 
