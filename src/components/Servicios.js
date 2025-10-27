@@ -1,66 +1,67 @@
 import React from 'react';
-import { Card, Container } from 'react-bootstrap';
+import { Card, Container, Col, Row } from 'react-bootstrap';
 
 
 function Servicios() {
     return (
-        <div className='row container mx-auto'>
-            <div className='col-lg-6'>
-                <h2 className='mb-4'>Servicios</h2 >
-            </div>
-            <div className='col-lg-6 text-lg-end text-muted mb-4'>
-                <h6>Estudio enérgetico, instalación certificada, monitoreo, mantención.</h6>
-            </div>
-            <div className='col-lg-3 mb-4'>
-                <Card style={{ width: '15rem' }}>
-                    <Card.Body>
-                        <Card.Img src='../../public/assets/images/certified.png' />
-                        <Card.Title style={{}}>Instalación Certificada</Card.Title>
-                        <Card.Text>
-                            Ejecutda por personal acreditado y normativa vigente.
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-            </div>
-            <div className='col-lg-3 mb-4'>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-            </div>
-            <div className='col-lg-3 mb-4'>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-            </div>
-            <div className='col-lg-3 mb-4'>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-            </div>
-
-        </div>
-        
+        <Container id="servicios">
+            <Row className="align-items-center my-5">
+                <Col xs={6} md={6}>
+                    <h2 className="text-start" >Servicios</h2>
+                </Col>
+                <Col xs={6} md={6} className="text-md-end text-muted mb-0">
+                    <span style={{fontWeight: 250}}>Estudios energéticos, instalación certificada, monitoreo y mantención.</span>
+                </Col>
+                {/* Card Estudio */}
+                <Col xs={12} md={3} className="my-4"> 
+                    <Card style={{border: 'solid 1px #1e109cff ', borderRadius: '8px', width: 'auto', height: '100%'}}>
+                        <Card.Body>
+                            <Card.Img src='/assets/images/estudio.png' alt='estudio energetino' />
+                            <Card.Title style={{fontWeight:'bolder'}}>Estudio energético</Card.Title>
+                            <Card.Text style={{fontWeight: 450, color: '#0e2933b7'}}>
+                                Análisis de consumo y propuesta ajustada a tu perfil.
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                 {/* Card Instalación */}
+                <Col xs={12} md={3} className="my-4"> 
+                    <Card style={{border: 'solid 1px #1e109cff ', borderRadius: '8px', width: 'auto', height: '100%'}}>
+                        <Card.Body >
+                            <Card.Img src='/assets/images/instalacion-2.png' alt='instalacion'/>
+                            <Card.Title style={{fontWeight:'bolder'}}>Instalación certificada</Card.Title>
+                            <Card.Text style={{fontWeight: 450, color: '#0e2933b7'}}>
+                                Ejecutada por personal acreditado y normativa vigente.
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                  {/* Card Monitoreo */}
+                <Col xs={12} md={3} className="my-4"> 
+                    <Card style={{border: 'solid 1px #1e109cff ', borderRadius: '8px', width: 'auto', height: '100%'}}>
+                        <Card.Body>
+                            <Card.Img src='/assets/images/mantencion.png' />
+                            <Card.Title style={{fontWeight:'bolder'}}>Monitoreo</Card.Title>
+                            <Card.Text style={{fontWeight: 450, color: '#0e2933b7'}}>
+                                Seguimiento de rendimiento y alertas preventivas.
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                {/* Card Mantención */}
+                <Col xs={12} md={3} className="my-4"> 
+                    <Card style={{border: 'solid 1px #1e109cff ', borderRadius: '8px', width: 'auto', height: '100%'}}>
+                        <Card.Body>
+                            <Card.Img src='/assets/images/.png' alt='mantencion'/>
+                            <Card.Title style={{fontWeight:'bolder'}}>Mantención</Card.Title>
+                            <Card.Text style={{fontWeight: 450, color: '#0e2933b7'}}>
+                                Planes periódicos para extener la vida útil del sistema.
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
+        </Container>
     )
 }
 
