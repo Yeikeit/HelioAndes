@@ -23,6 +23,7 @@ function NavbarHelio() {
             <Nav.Link href="#testimonios">Testimonios</Nav.Link>
             <Nav.Link href="#faq">FAQ</Nav.Link>
             <Nav.Link href="#contacto">Contacto</Nav.Link>
+            <Nav.Link href="#hero">Hero</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
