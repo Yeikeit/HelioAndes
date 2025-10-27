@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, Container } from 'react-bootstrap';
 
 
 function Servicios() {
@@ -61,7 +61,7 @@ function Servicios() {
 
         </div>
         
-    );
+    )
 }
 
 export default Servicios;
