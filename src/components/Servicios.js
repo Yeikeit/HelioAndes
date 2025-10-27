@@ -1,10 +1,10 @@
 import React from 'react';
-import { Card, Container, Col, Row, Button } from 'react-bootstrap';
+import { Card, Container, Col, Row } from 'react-bootstrap';
 
 
 function Servicios() {
     return (
-        <Container id="soluciones">
+        <Container id="servicios">
             <Row className="align-items-center my-5">
                 <Col xs={6} md={6}>
                     <h2 className="text-start" >Servicios</h2>
@@ -16,29 +16,23 @@ function Servicios() {
                 <Col xs={12} md={3} className="my-4"> 
                     <Card style={{border: 'solid 1px #1e109cff ', borderRadius: '8px', width: 'auto', height: '100%'}}>
                         <Card.Body>
-                            <Card.Img src='/assets/images/casa.png' alt="hogar" />
-                            <Card.Title>Hogar 3-5 kW</Card.Title>
-                            <Card.Text style={{fontWeight: 300}}>
-                                Balance ideal entre costo y ahorro mensual.
+                            <Card.Img src='/assets/images/estudio.png' alt='estudio energetino' />
+                            <Card.Title style={{fontWeight:'bolder'}}>Estudio energético</Card.Title>
+                            <Card.Text style={{fontWeight: 450, color: '#0e2933b7'}}>
+                                Análisis de consumo y propuesta ajustada a tu perfil.
                             </Card.Text>
-                            <Button style={{backgroundColor: '#046b94b7', border: 'none'}}>
-                                <a href='#contacto' style={{color: 'white', textDecoration:'none'}}>Solicitar Asesoria</a>
-                            </Button>
                         </Card.Body>
                     </Card>
                 </Col>
                  {/* Card Instalación */}
                 <Col xs={12} md={3} className="my-4"> 
                     <Card style={{border: 'solid 1px #1e109cff ', borderRadius: '8px', width: 'auto', height: '100%'}}>
-                        <Card.Body>
-                            <Card.Img src='/assets/images/pyme.png' />
-                            <Card.Title >Pyme 10-20 kW</Card.Title>
-                            <Card.Text style={{fontWeight: 300}}>
-                                Para operación diurna con buena irradición.
+                        <Card.Body >
+                            <Card.Img src='/assets/images/instalacion-2.png' alt='instalacion'/>
+                            <Card.Title style={{fontWeight:'bolder'}}>Instalación certificada</Card.Title>
+                            <Card.Text style={{fontWeight: 450, color: '#0e2933b7'}}>
+                                Ejecutada por personal acreditado y normativa vigente.
                             </Card.Text>
-                            <Button style={{backgroundColor: '#046b94b7', border: 'none'}}>
-                                <a href='#contacto' style={{color: 'white', textDecoration:'none'}}>Solicitar Asesoria</a>
-                            </Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -46,28 +40,23 @@ function Servicios() {
                 <Col xs={12} md={3} className="my-4"> 
                     <Card style={{border: 'solid 1px #1e109cff ', borderRadius: '8px', width: 'auto', height: '100%'}}>
                         <Card.Body>
-                            <Card.Img src='/assets/images/bateria.png' />
-                            <Card.Title style={{}}>Off-grid con baterías</Card.Title>
-                            <Card.Text style={{fontWeight: 300}}>
-                                Autonomía en zonas sin red eléctrica.
+                            <Card.Img src='/assets/images/mantencion.png' />
+                            <Card.Title style={{fontWeight:'bolder'}}>Monitoreo</Card.Title>
+                            <Card.Text style={{fontWeight: 450, color: '#0e2933b7'}}>
+                                Seguimiento de rendimiento y alertas preventivas.
                             </Card.Text>
-                            <Button style={{backgroundColor: '#046b94b7', border: 'none'}}>
-                                <a href='#contacto' style={{color: 'white', textDecoration:'none'}}>Solicitar Asesoria</a>
-                            </Button>
                         </Card.Body>
                     </Card>
                 </Col>
+                {/* Card Mantención */}
                 <Col xs={12} md={3} className="my-4"> 
                     <Card style={{border: 'solid 1px #1e109cff ', borderRadius: '8px', width: 'auto', height: '100%'}}>
                         <Card.Body>
-                            <Card.Img src='/assets/images/bateria.png' />
-                            <Card.Title style={{}}>Off-grid con baterías</Card.Title>
-                            <Card.Text style={{fontWeight: 300}}>
-                                Autonomía en zonas sin red eléctrica.
+                            <Card.Img src='/assets/images/.png' alt='mantencion'/>
+                            <Card.Title style={{fontWeight:'bolder'}}>Mantención</Card.Title>
+                            <Card.Text style={{fontWeight: 450, color: '#0e2933b7'}}>
+                                Planes periódicos para extener la vida útil del sistema.
                             </Card.Text>
-                            <Button style={{backgroundColor: '#046b94b7', border: 'none'}}>
-                                <a href='#contacto' style={{color: 'white', textDecoration:'none'}}>Solicitar Asesoria</a>
-                            </Button>
                         </Card.Body>
                     </Card>
                 </Col>
