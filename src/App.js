@@ -9,20 +9,22 @@ import Planes from './components/Planes';
 import Servicios from './components/Servicios';
 import Soluciones from './components/Soluciones';
 import Testimonios from './components/Testimonios';
+import opcionesSelects from './db-mock/opciones.js';
 
 function App() {
+  const anioActual = new Date().getFullYear();
   return (
     <div className="App">
       <NavbarHelio />
       <Hero />
       <Servicios />
       <Soluciones />
-      <CalculadoraIntegral />
+      <CalculadoraIntegral opcionesSelects={opcionesSelects}/>
       <Planes />
       <Testimonios />
       <FAQ />
       <Contacto />
-      <Footer />
+      <Footer anio={anioActual}/>
     </div>
   );
 }
