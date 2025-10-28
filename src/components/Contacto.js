@@ -26,7 +26,7 @@ function Contacto() {
     };
 
     return (
-        <Container id='contacto'>
+        <Container id="contacto">
             <Row className='align-items-center my-5'>
                 <Col xs={6} md={6}>
                     <h2 className='text-start'>Contacto</h2>
