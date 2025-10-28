@@ -16,7 +16,7 @@ function Servicios() {
                 <Col xs={12} md={3} className="my-4"> 
                     <Card style={{border: 'solid 1px #1e109cff ', borderRadius: '8px', width: 'auto', height: '100%'}}>
                         <Card.Body>
-                            <Card.Img src='/assets/images/estudio.png' alt='estudio energetino' />
+                            <Card.Img style={{height:'10em'}} src='/assets/images/estudio.png' alt='estudio energetino' />
                             <Card.Title style={{fontWeight:'bolder'}}>Estudio energético</Card.Title>
                             <Card.Text style={{fontWeight: 450, color: '#0e2933b7'}}>
                                 Análisis de consumo y propuesta ajustada a tu perfil.
@@ -28,7 +28,7 @@ function Servicios() {
                 <Col xs={12} md={3} className="my-4"> 
                     <Card style={{border: 'solid 1px #1e109cff ', borderRadius: '8px', width: 'auto', height: '100%'}}>
                         <Card.Body >
-                            <Card.Img src='/assets/images/instalacion-2.png' alt='instalacion'/>
+                            <Card.Img style={{height:'10em', width:'10em'}} src='/assets/images/instalacion.png' alt='instalacion'/>
                             <Card.Title style={{fontWeight:'bolder'}}>Instalación certificada</Card.Title>
                             <Card.Text style={{fontWeight: 450, color: '#0e2933b7'}}>
                                 Ejecutada por personal acreditado y normativa vigente.
@@ -40,7 +40,7 @@ function Servicios() {
                 <Col xs={12} md={3} className="my-4"> 
                     <Card style={{border: 'solid 1px #1e109cff ', borderRadius: '8px', width: 'auto', height: '100%'}}>
                         <Card.Body>
-                            <Card.Img src='/assets/images/mantencion.png' />
+                            <Card.Img style={{height:'10em', width:'10em'}} src='/assets/images/monitoreo.png' />
                             <Card.Title style={{fontWeight:'bolder'}}>Monitoreo</Card.Title>
                             <Card.Text style={{fontWeight: 450, color: '#0e2933b7'}}>
                                 Seguimiento de rendimiento y alertas preventivas.
@@ -52,7 +52,7 @@ function Servicios() {
                 <Col xs={12} md={3} className="my-4"> 
                     <Card style={{border: 'solid 1px #1e109cff ', borderRadius: '8px', width: 'auto', height: '100%'}}>
                         <Card.Body>
-                            <Card.Img src='/assets/images/.png' alt='mantencion'/>
+                            <Card.Img style={{height:'10em', width:'10em'}} src='/assets/images/mantencion.png' alt='mantencion'/>
                             <Card.Title style={{fontWeight:'bolder'}}>Mantención</Card.Title>
                             <Card.Text style={{fontWeight: 450, color: '#0e2933b7'}}>
                                 Planes periódicos para extener la vida útil del sistema.
