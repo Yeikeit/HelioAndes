@@ -1,4 +1,4 @@
-import { Badge, CardText, Col, Image, Row } from 'react-bootstrap';
+import { Badge, Col, Row } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
