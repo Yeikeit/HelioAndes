@@ -17,8 +17,8 @@ const opcionesSelects = {
     ],
     subsidio: [
         { label: 'Sin subsidio', value: 'sin', descuento: 0 },
-        { label: 'Residencial', value: 'residencial', descuento: -0.08 },
-        { label: 'Pyme', value: 'pyme', descuento: -0.05 }
+        { label: 'Residencial', value: 'residencial', descuento: 0.08 },
+        { label: 'Pyme', value: 'pyme', descuento: 0.05 }
     ],
     metodoEnvio: [
         { label: 'Estándar', value: 'estandar', multiplicador: 1.00 },

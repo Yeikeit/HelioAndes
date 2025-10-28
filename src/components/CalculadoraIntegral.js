@@ -101,7 +101,7 @@ function CalculadoraIntegral({ opcionesSelects }) {
     const recargoGarantia = valores.garantia
         ? (opcionesSelects.garantia.find(opt => opt.value === valores.garantia)?.recargo || 0)
         : 0;
-    const montoGarantia = ((panelesIncluidos ? subtotalEquipos : subtotalSinPanel) + montoRecargoTecho) * recargoGarantia;
+    const montoGarantia = ((panelesIncluidos ? subtotalEquipos : subtotalSinPanel) + montoRecargoTecho - montoSubsidio) * recargoGarantia;
 
     const totalAntesFinanciar = ((panelesIncluidos ? subtotalEquipos : subtotalSinPanel) + montoRecargoTecho - montoSubsidio)
         + instalacionFinal + montoIVA + montoEnvio + montoGarantia;
