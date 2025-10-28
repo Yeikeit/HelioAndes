@@ -124,6 +124,8 @@ function CalculadoraIntegral({ opcionesSelects }) {
 
     const cuota = nCuotas > 1 ? (montoFinanciar + interesTotal) / nCuotas : montoFinanciar;
 
+    const totalFinal = totalAntesFinanciar + interesTotal;
+
     return (
         <Container id="calculadora-integral">
             <Row className="justify-content-center">
@@ -336,7 +338,7 @@ function CalculadoraIntegral({ opcionesSelects }) {
                                     <tr><th>Pie</th><td>$ {pie.toLocaleString()}</td></tr>
                                     <tr><th>Interés total</th><td>$ {interesTotal.toLocaleString()}</td></tr>
                                     <tr><th>Cuota</th><td>$ {cuota.toLocaleString()}</td></tr>
-                                    <tr className="table-primary fw-bold"><th>Total final</th><td>$ —</td></tr>
+                                    <tr className="table-primary fw-bold"><th>Total final</th><td>$ {totalFinal.toLocaleString()}</td></tr>
                                 </tbody>
                             </table>
                             <div className="text-muted mt-2" style={{ fontSize: '0.9em' }}>Valores referenciales para el prototipo</div>
